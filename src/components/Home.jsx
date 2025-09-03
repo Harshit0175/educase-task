@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const home = () => {
   return (
-    <div className=' min-h-screen w-screen bg-gray-800 flex items-center justify-center'>
+    <div className=' min-h-screen w-screen bg-gray-300 flex items-center justify-center'>
       <div className='bg-white w-full max-w-md h-full md:h-[700px] rounded-xl p-6 flex flex-col justify-between'>
          {/* Top content */}
       <div className='flex flex-col  mt-105'>

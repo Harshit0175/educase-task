@@ -1,14 +1,22 @@
 import React, { useContext, useState } from 'react'
 import { Appcontext } from '../context/context';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
     const {email, setEmail} = useContext(Appcontext)
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+    const handlesubmit=(e)=>{
+        e.preventDefault();
+           navigate("/profile")
+
+    }
 
     return (
         <div className=' min-h-screen w-screen bg-gray-300 flex items-center justify-center'>
             <div className='bg-white w-full max-w-md h-full md:h-[700px] rounded-xl p-6 flex flex-col '>
-                <form className="flex flex-col  gap-4  items-start py-5 w-80 sm:w-[352px] text-gray-500 rounded-lg  bg-white">
+                <form onSubmit={handlesubmit} className="flex flex-col  gap-4  items-start py-5 w-80 sm:w-[352px] text-gray-500 rounded-lg  bg-white">
                     <p className="text-4xl font-semibold  max-w-60  text-black   ">
                         Signin to your PopX account
                     </p>
