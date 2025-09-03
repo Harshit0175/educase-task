@@ -6,7 +6,7 @@ import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
 import Signup from './auth/Signup'
 import Login from './auth/Login'
-import Profile from './pages/profile'
+import Profile from './pages/Profile'
 
 
 function App() {
